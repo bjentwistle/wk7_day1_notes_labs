@@ -22,7 +22,7 @@ const updateDOM = () => {
     redListItem.textContent = "RED!"
     redListItem.classList.add("bold") //adds bold to the red css class itme
 
-    //mkae a new li item
+    //make a new li item
     const newListItem = document.createElement("li")
     newListItem.textContent = "Purple"
     newListItem.classList.add("purple")
