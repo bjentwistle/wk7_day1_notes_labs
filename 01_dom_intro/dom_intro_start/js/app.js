@@ -1,6 +1,10 @@
 console.log('Hello World')
 
 document.addEventListener("DOMContentLoaded",() => {
+    setTimeout(updateDOM, 3000) //delay update by 3000ms
+})
+
+const updateDOM = () => {
     const title = document.querySelector('h1') //selects the h1 in css
     console.log("title", title)
     title.textContent= "JS says Hello Becky!"
@@ -27,5 +31,6 @@ document.addEventListener("DOMContentLoaded",() => {
     const list = document.querySelector("ul")
     list.appendChild(newListItem)
 
-}) //waits until the page is loaded then do the next steps inside the curly bois {}
+
+} //waits until the page is loaded then do the next steps inside the curly bois {}
 
